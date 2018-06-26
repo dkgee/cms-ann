@@ -39,4 +39,10 @@ public class InputLayer extends Layer{
         }
 
     }
+
+
+    /*******ch02*******/
+    public void setNumerOfNeuronsInLayer(int numerOfNeuronsInLayer){
+
+    }
 }
