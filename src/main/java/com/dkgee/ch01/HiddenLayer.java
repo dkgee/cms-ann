@@ -16,9 +16,9 @@ public class HiddenLayer extends Layer {
         ArrayList<Double> listOfWeightOut = new ArrayList<>();
         ArrayList<Neuron> listOfNeurons = new ArrayList<>();
 
-        int numberOfHiddenLayers = hiddenLayer.getNumberOfNeuronsInLayer();
+        int numberOfHiddenLayers = listOfHiddenLayer.size();
 
-        for(int i =0;  i < numberOfHiddenLayers; i++){
+        for(int i = 0;  i < numberOfHiddenLayers; i++){
             for(int j = 0; j < hiddenLayer.getNumberOfNeuronsInLayer(); j++){
                 Neuron neuron = new Neuron();
 
@@ -43,6 +43,7 @@ public class HiddenLayer extends Layer {
                     limitOut = listOfHiddenLayer.get( i + 1).getNumberOfNeuronsInLayer();
                 }
 
+
                 for(int k = 0; k < limitIn; k++){
                     listOfWeightIn.add(neuron.initNeuron());
                 }
@@ -50,6 +51,7 @@ public class HiddenLayer extends Layer {
                 for(int k = 0; k < limitOut; k++){
                     listOfWeightOut.add(neuron.initNeuron());
                 }
+
 
                 neuron.setListOfWeightIn(listOfWeightIn);
                 neuron.setListOfWeightOut(listOfWeightOut);
@@ -59,6 +61,7 @@ public class HiddenLayer extends Layer {
                 listOfWeightIn = new ArrayList<>();
                 listOfWeightOut = new ArrayList<>();
             }
+
             listOfHiddenLayer.get(i).setListOfNeurons(listOfNeurons);
             listOfNeurons = new ArrayList<>();
         }

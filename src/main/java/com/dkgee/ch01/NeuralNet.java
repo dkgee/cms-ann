@@ -23,8 +23,8 @@ public class NeuralNet {
         inputLayer = new InputLayer();
         inputLayer.setNumberOfNeuronsInLayer( 2 );
 
-        numberOfHiddenLayers = 2;
-        listOfHiddenLayer = new ArrayList<HiddenLayer>();
+        numberOfHiddenLayers = 1;
+        listOfHiddenLayer = new ArrayList<>();
         for (int i = 0; i < numberOfHiddenLayers; i++) {
             hiddenLayer = new HiddenLayer();
             hiddenLayer.setNumberOfNeuronsInLayer( 3 );
