@@ -42,7 +42,7 @@ public class InputLayer extends Layer{
 
 
     /*******ch02*******/
-    public void setNumerOfNeuronsInLayer(int numerOfNeuronsInLayer){
-
+    public void setNumberOfNeuronsInLayer(int numberOfNeuronsInLayer) {
+        this.numberOfNeuronsInLayer = numberOfNeuronsInLayer + 1; //BIAS
     }
 }

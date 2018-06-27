@@ -11,7 +11,7 @@ public abstract class Layer {
 
     private ArrayList<Neuron> listOfNeurons;
 
-    private int numberOfNeuronsInLayer;
+    protected int numberOfNeuronsInLayer;
 
     public ArrayList<Neuron> getListOfNeurons() {
         return listOfNeurons;
@@ -27,5 +27,9 @@ public abstract class Layer {
 
     public void setNumberOfNeuronsInLayer(int numberOfNeuronsInLayer) {
         this.numberOfNeuronsInLayer = numberOfNeuronsInLayer;
+    }
+
+    public void printLayer(){
+
     }
 }
